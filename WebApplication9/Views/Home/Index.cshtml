@@ -1,0 +1,24 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
+
+<html data-ng-app="app">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+
+    @Styles.Render("~/bundels/styles")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/app")
+</head>
+<body>
+    <div class="container-fluid">
+        <div>Version <span data-app-version></span></div>
+        <div class="row">
+            <div class="col-md-12" data-ng-view=""></div>
+        </div>
+    </div>
+</body>
+</html>
