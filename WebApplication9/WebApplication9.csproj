@@ -108,6 +108,8 @@
     <Content Include="appSpecs\serviceSpecs\versionNumberSpec.js" />
     <Content Include="app\app.js" />
     <Content Include="app\controllers\homeCtrl.js" />
+    <Content Include="app\core\players.js" />
+    <Content Include="app\core\playersSpec.js" />
     <Content Include="app\core\prototypes.js" />
     <Content Include="app\core\fightMoves.js" />
     <Content Include="app\core\titleCreator.js" />

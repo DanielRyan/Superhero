@@ -34,7 +34,7 @@ describe("HomeCtrl - model - players property", function () {
     });
 
     it("should have an array", function () {
-        expect(model.players.all.length).toBeGreaterThan(0);
+        expect(model.players.getAll().length).toBeGreaterThan(0);
     });
 
     it("should have playerOne property as undefined", function () {

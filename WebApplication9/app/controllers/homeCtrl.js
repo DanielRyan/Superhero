@@ -1,4 +1,5 @@
 ﻿/// <reference path="../core/match.js" />
+/// <reference path="../core/players.js" />
 function homeCtrl($scope, $timeout) {
 
     var model = {
@@ -32,26 +33,7 @@ function homeCtrl($scope, $timeout) {
             });
 
         },
-        players: {
-            all: ["Daniel", "Cato", "Steam Rune", "Glenn", "Peda", "Andreas", "Ørjan", "Shamrez", "Petter", "Pedro", "Rune S", "Kjartan", "Rune B", "Terje", "Øyvind", "Stein-Arild"],
-            playerOne: undefined,
-            playerTwo: undefined,
-            select: function (player) {
-                if (!this.playerOne)
-                    this.playerOne = player;
-                else if (!this.playerTwo)
-                    this.playerTwo = player;
-
-                if (this.playerOne && this.playerTwo)
-                    this.ready = true;
-            },
-            reset: function () {
-                this.playerOne = undefined;
-                this.playerTwo = undefined;
-            },
-            ready: false
-        }
-
+        players: new Players()
     };
 
     $scope.model = model;
